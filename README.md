@@ -17,6 +17,8 @@ Painel Python que reúne cadastro agrícola, banco relacional, telemetria, anál
 Pré-requisito: **Python 3.12** e Git. A versão local usa CPU; não precisa de GPU.
 
 ```bash
+git clone https://github.com/FIAP-PROJECTS-GABRIEL-MARCOLINO-RAMOS/farmtech-fase7-gabriel-marcolino-ramos.git
+cd farmtech-fase7-gabriel-marcolino-ramos
 python3.12 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements-lock.txt
