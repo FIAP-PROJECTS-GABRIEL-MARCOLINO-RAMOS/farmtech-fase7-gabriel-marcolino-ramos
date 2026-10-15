@@ -1,0 +1,14 @@
+{
+  "atividade_id": 676739,
+  "fase": 7,
+  "grupo": 17,
+  "integrante": "Gabriel Marcolino Ramos",
+  "rm": "RM565717",
+  "prazo": "2026-11-10T23:59:00-03:00",
+  "estado": "em desenvolvimento",
+  "entrega_no_portal_confirmada": false,
+  "aws_implantacao_confirmada": false,
+  "email_recebido_confirmado": false,
+  "video_url": null,
+  "regra_commits": "Encerrar os commits antes do prazo e não fazer novos commits após o envio confirmado."
+}

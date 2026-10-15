@@ -1,0 +1,143 @@
+{
+  "seed": 565717,
+  "rows": 156,
+  "unique_climate_groups": 39,
+  "train_rows": 124,
+  "test_rows": 32,
+  "train_groups": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    6,
+    8,
+    9,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    31,
+    32,
+    33,
+    35,
+    36,
+    37
+  ],
+  "test_groups": [
+    2,
+    7,
+    10,
+    12,
+    22,
+    30,
+    34,
+    38
+  ],
+  "group_overlap": 0,
+  "selected_model": "Random Forest",
+  "selection": "menor MAE médio de validação cruzada GroupKFold, somente treino",
+  "unit": "escala original de Yield; unidade não confirmada",
+  "precipitation_unit": "rótulo original mm day-1; valores requerem confirmação da escala temporal",
+  "data_sha256": "07b3335f497e08e705b5835ee334426ac16cb24732c1bfaa994254d39f771b1b",
+  "model_sha256": "d662ea29e250948168ed96c8c40e258cb00c8a97b852a74a0403a67db1a1ee96",
+  "metrics": [
+    {
+      "modelo": "Baseline média",
+      "cv_mae": 60028.68914285714,
+      "cv_mae_desvio": 1174.230313078781,
+      "teste_mae": 59265.098790322576,
+      "teste_rmse": 69627.67144715127,
+      "teste_r2": -1.2490163671774468e-05
+    },
+    {
+      "modelo": "Média por cultura",
+      "cv_mae": 4615.878642857142,
+      "cv_mae_desvio": 404.0439379783467,
+      "teste_mae": 5713.318548387097,
+      "teste_rmse": 9175.202170928244,
+      "teste_r2": 0.9826350728105435
+    },
+    {
+      "modelo": "Regressão linear",
+      "cv_mae": 5034.946814331787,
+      "cv_mae_desvio": 297.8579336397543,
+      "teste_mae": 5661.603569188177,
+      "teste_rmse": 9406.365880473495,
+      "teste_r2": 0.9817490524601881
+    },
+    {
+      "modelo": "Árvore",
+      "cv_mae": 5117.123149527486,
+      "cv_mae_desvio": 794.0119692572113,
+      "teste_mae": 4832.495695307109,
+      "teste_rmse": 8365.70703907326,
+      "teste_r2": 0.9855639962778427
+    },
+    {
+      "modelo": "Random Forest",
+      "cv_mae": 4364.080170480009,
+      "cv_mae_desvio": 738.8499815325492,
+      "teste_mae": 5012.908269091503,
+      "teste_rmse": 8883.867453566976,
+      "teste_r2": 0.983720321562728
+    },
+    {
+      "modelo": "KNN",
+      "cv_mae": 13868.106666666668,
+      "cv_mae_desvio": 5917.232844233209,
+      "teste_mae": 10059.275000000001,
+      "teste_rmse": 23654.511464729094,
+      "teste_r2": 0.8845830355856318
+    },
+    {
+      "modelo": "SVR",
+      "cv_mae": 32793.66710897109,
+      "cv_mae_desvio": 2117.2177155583363,
+      "teste_mae": 28642.995224074795,
+      "teste_rmse": 54386.82001101919,
+      "teste_r2": 0.3898606788097211
+    }
+  ],
+  "test_metrics_by_crop": [
+    {
+      "cultura": "Cocoa, beans",
+      "n": 8,
+      "mae": 1299.925481898005
+    },
+    {
+      "cultura": "Oil palm fruit",
+      "n": 8,
+      "mae": 13830.305448081988
+    },
+    {
+      "cultura": "Rice, paddy",
+      "n": 8,
+      "mae": 3852.9034732142845
+    },
+    {
+      "cultura": "Rubber, natural",
+      "n": 8,
+      "mae": 1068.4986731717358
+    }
+  ],
+  "limitations": [
+    "156 registros e apenas 39 cenários climáticos",
+    "R² agregado é influenciado pela diferença de escala entre culturas; comparar também com média por cultura",
+    "Unidades e origem detalhada da base não confirmadas",
+    "Não converter leituras do solo em variáveis climáticas; não equivale a recomendação agronômica"
+  ]
+}

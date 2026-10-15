@@ -1,0 +1,52 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: FarmTech Fase 7 - SNS Standard para alertas operacionais academicos
+Parameters:
+  EmailDestino:
+    Type: String
+    NoEcho: true
+    Description: E-mail autorizado que recebera a confirmacao e os alertas
+    AllowedPattern: '^[^\s@]+@[^\s@]+\.[^\s@]+$'
+  UsarKMS:
+    Type: String
+    AllowedValues: ['true', 'false']
+    Default: 'true'
+    Description: Usar chave gerenciada alias/aws/sns; depende das permissoes do laboratorio
+Conditions:
+  Criptografar: !Equals [!Ref UsarKMS, 'true']
+Resources:
+  Alertas:
+    Type: AWS::SNS::Topic
+    Properties:
+      TopicName: farmtech-fase7-alertas-rm565717
+      DisplayName: FarmTech Fase 7
+      KmsMasterKeyId: !If [Criptografar, alias/aws/sns, !Ref 'AWS::NoValue']
+      Tags:
+        - Key: Projeto
+          Value: FIAP-FarmTech-Fase7
+        - Key: Ambiente
+          Value: Academico
+  AssinaturaEmail:
+    Type: AWS::SNS::Subscription
+    Properties:
+      TopicArn: !Ref Alertas
+      Protocol: email
+      Endpoint: !Ref EmailDestino
+  ApenasTLS:
+    Type: AWS::SNS::TopicPolicy
+    Properties:
+      Topics: [!Ref Alertas]
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Sid: NegarTransporteSemTLS
+            Effect: Deny
+            Principal: '*'
+            Action: sns:*
+            Resource: !Ref Alertas
+            Condition:
+              Bool:
+                aws:SecureTransport: 'false'
+Outputs:
+  TopicArn:
+    Description: ARN para FARMTECH_SNS_TOPIC_ARN; nao incluir credenciais no Git
+    Value: !Ref Alertas

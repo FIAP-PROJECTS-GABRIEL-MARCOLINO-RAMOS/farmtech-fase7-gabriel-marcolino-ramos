@@ -1,0 +1,18 @@
+YOLOv5 v7.0 — Ultralytics, GPL-3.0. Código oficial obtido no commit
+915bbf294bb74c859f0b41f1c23bc395014ea679. Licença em docs/YOLOv5-LICENSE.txt.
+Checkpoint customizado treinado por Gabriel Marcolino Ramos na Fase 6.
+
+COCO val2017 — imagens com licenças individuais descritas no manifesto em
+data/imagens/manifesto.csv. Restrições de cada fotografia permanecem válidas.
+
+crop_yield.csv — base acadêmica da Fase 5. A licença de redistribuição e as
+unidades não acompanham o arquivo original. Não presumir licença GPL para a base.
+
+Materiais históricos FIAP-IA e ZIP da Fase 1 — Gabriel Marcolino Ramos.
+As cópias preservadas em docs/legado são referência; os serviços desta integração
+estão em src/farmtech.
+
+Streamlit, scikit-learn, pandas, NumPy, Plotly, PyTorch, torchvision, Boto3,
+Requests e demais bibliotecas mantêm suas próprias licenças.
+Open-Meteo — atribuição da previsão meteorológica: https://open-meteo.com/.
+Referências de interface registradas em docs/direcao-visual.md, sem copiar ativos.

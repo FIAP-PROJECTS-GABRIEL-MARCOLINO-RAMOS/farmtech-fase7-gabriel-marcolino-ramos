@@ -1,0 +1,110 @@
+[
+  {
+    "deteccoes": [
+      {
+        "classe": "carro",
+        "confianca": 0.6701,
+        "caixa": [
+          96.13,
+          189.58,
+          534.17,
+          357.88
+        ]
+      },
+      {
+        "classe": "carro",
+        "confianca": 0.62838,
+        "caixa": [
+          368.26,
+          183.47,
+          640.0,
+          323.47
+        ]
+      }
+    ],
+    "tempo_ms": 28.162016000351286,
+    "modelo": "YOLOv5n Fase 6 — 60 épocas",
+    "classes": [
+      "gato",
+      "carro"
+    ],
+    "execucao_id": 3
+  },
+  {
+    "deteccoes": [
+      {
+        "classe": "carro",
+        "confianca": 0.6723,
+        "caixa": [
+          372.53,
+          184.92,
+          630.81,
+          321.1
+        ]
+      },
+      {
+        "classe": "carro",
+        "confianca": 0.52738,
+        "caixa": [
+          111.66,
+          185.88,
+          503.77,
+          370.12
+        ]
+      }
+    ],
+    "tempo_ms": 32.88310999960231,
+    "modelo": "YOLOv5n Fase 6 — 30 épocas",
+    "classes": [
+      "gato",
+      "carro"
+    ],
+    "execucao_id": 4
+  },
+  {
+    "deteccoes": [
+      {
+        "classe": "carro",
+        "confianca": 0.86188,
+        "caixa": [
+          92.82,
+          181.85,
+          522.88,
+          377.8
+        ]
+      },
+      {
+        "classe": "carro",
+        "confianca": 0.84259,
+        "caixa": [
+          368.18,
+          186.76,
+          635.37,
+          325.06
+        ]
+      }
+    ],
+    "tempo_ms": 18.95058399895788,
+    "modelo": "YOLOv5n COCO padrão",
+    "classes": [
+      "gato",
+      "carro"
+    ],
+    "execucao_id": 5
+  },
+  {
+    "deteccoes": [],
+    "classificacao": {
+      "classe": "carro",
+      "probabilidade_softmax": 0.684758186340332,
+      "nota": "Classificação da imagem inteira; probabilidade não calibrada. Não localiza objetos."
+    },
+    "tempo_ms": 5.616985999949975,
+    "modelo": "CNN Fase 6 — do zero",
+    "classes": [
+      "gato",
+      "carro"
+    ],
+    "execucao_id": 6
+  }
+]

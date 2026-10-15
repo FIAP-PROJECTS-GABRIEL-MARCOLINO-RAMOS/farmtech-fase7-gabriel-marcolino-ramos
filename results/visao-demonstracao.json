@@ -1,0 +1,31 @@
+{
+  "deteccoes": [
+    {
+      "classe": "carro",
+      "confianca": 0.6701,
+      "caixa": [
+        96.13,
+        189.58,
+        534.17,
+        357.88
+      ]
+    },
+    {
+      "classe": "carro",
+      "confianca": 0.62838,
+      "caixa": [
+        368.26,
+        183.47,
+        640.0,
+        323.47
+      ]
+    }
+  ],
+  "tempo_ms": 31.223132000377518,
+  "modelo": "YOLOv5n Fase 6 — 60 épocas",
+  "classes": [
+    "gato",
+    "carro"
+  ],
+  "execucao_id": 2
+}

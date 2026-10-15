@@ -1,0 +1,13 @@
+{
+  "sensor_id": "manual-exemplo",
+  "evento_id": "exemplo-20261015-01",
+  "observado_em": "2026-10-15T14:00:00-03:00",
+  "umidade_solo": 24.5,
+  "umidade_ar": 65,
+  "temperatura": 29,
+  "ph": 6.3,
+  "ph_simulado": true,
+  "fosforo": 1,
+  "potassio": 1,
+  "origem": "manual"
+}

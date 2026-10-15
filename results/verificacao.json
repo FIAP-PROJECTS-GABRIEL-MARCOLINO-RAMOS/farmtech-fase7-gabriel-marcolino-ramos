@@ -1,0 +1,35 @@
+{
+  "checked_on": "2026-10-15T18:20:12.633919+00:00",
+  "python": "3.12.3",
+  "test_suite": {
+    "passed": 18,
+    "failed": 0,
+    "command": "python -m pytest -q",
+    "scope": "serviços, atomicidade, duplicação, integridade, cliente SNS simulado e sete telas Streamlit"
+  },
+  "vision": {
+    "models_executed": [
+      "YOLOv5n customizado 30",
+      "YOLOv5n customizado 60",
+      "YOLOv5n padrão",
+      "CNN do zero"
+    ],
+    "device": "CPU",
+    "data": "uma fotografia COCO por modelo; não equivale a benchmark novo"
+  },
+  "weather": "consulta real Open-Meteo concluída; 7 dias",
+  "aws": "não implantado; nenhuma mensagem real enviada",
+  "hardware": "não testado em ESP32 físico",
+  "video": "não gravado nesta fase",
+  "source_commits": {
+    "farmtech-fase5": "9992628b8786564f733f304aa11758a34c669094",
+    "farmtech-fase6": "7be5bf3e335d3cc8ca261149d7a00e822f8427ca"
+  },
+  "checkpoint_sha256": {
+    "yolov5n_30ep_best.pt": "25810df56f67cb7554481ca5f9138b39f8ff3cde77fecad6e37d19c5c2dbf898",
+    "yolov5n.pt": "4f180cf23ba0717ada0badd6c685026d73d48f184d00fc159c2641284b2ac0a3",
+    "produtividade.joblib": "d662ea29e250948168ed96c8c40e258cb00c8a97b852a74a0403a67db1a1ee96",
+    "cnn_best.pt": "2bdcf792f7167a68244f5b32043fca4e1f14c00a57b981eede2cfa3c81cfaba3",
+    "yolov5n_60ep_best.pt": "e0871fe160817e61307fc5d0e20961edaf0d43d39b8346c40e40e9dc9b3fdee8"
+  }
+}

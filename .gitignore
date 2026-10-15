@@ -1,0 +1,11 @@
+.venv/
+.cache/
+vendor/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+.streamlit/secrets.toml
+runtime/
+output/
+video/voz-*
