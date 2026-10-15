@@ -85,9 +85,16 @@ if section=='Visão geral':
         with right:
             st.subheader('Próximas ações')
             if not open_alerts:st.success('Nenhuma ocorrência aberta.')
-            for a in open_alerts[:3]:
+            groups={}
+            for item in open_alerts:
+                key=(item['regra'],item['talhao'])
+                if key not in groups:groups[key]={'alert':item,'count':0}
+                groups[key]['count']+=1
+            ordered=sorted(groups.values(),key=lambda group:{'solo_seco':3,'ph_faixa':2,'nutrientes':1,'veiculo':0}.get(group['alert']['regra'],0),reverse=True)
+            for group in ordered[:3]:
+                a=group['alert']
                 with st.container(border=True):
-                    st.caption(a['talhao'] or 'Monitoramento visual')
+                    st.caption((a['talhao'] or 'Monitoramento visual')+f" · {group['count']} ocorrência(s)")
                     st.markdown('**'+a['titulo']+'**');st.write(a['acao'])
                     st.caption('Notificação: '+a['notificacao'])
         st.subheader('Talhões em acompanhamento')

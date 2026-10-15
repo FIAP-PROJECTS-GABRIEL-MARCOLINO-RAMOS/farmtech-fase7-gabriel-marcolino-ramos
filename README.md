@@ -38,6 +38,8 @@ python -m farmtech alertas
 python -m pytest -q
 ```
 
+A instalação foi conferida em uma cópia limpa com ambiente Python separado: dependências compatíveis, 18 testes aprovados, métricas reproduzidas e inferência dos 4 modelos executada em CPU. [Registro da reprodução](results/reproducao.json). A validação estática do template AWS passou; isso não comprova implantação.
+
 ## Serviços integrados
 
 | Fases | Função no painel | Implementação |

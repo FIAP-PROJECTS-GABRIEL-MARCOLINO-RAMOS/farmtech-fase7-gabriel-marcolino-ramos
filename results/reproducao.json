@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-15T18:24:00.139395+00:00",
+  "base_commit": "6b26138",
+  "isolated_python_environment": true,
+  "python": "3.12.3",
+  "dependency_lock": "requirements-lock.txt",
+  "tests": "18 passed",
+  "model_training": "executado novamente; métricas MAE, RMSE, R² e validação cruzada reproduzidas",
+  "vision": "quatro checkpoints executados em CPU, em cópia limpa, com repositório YOLO fixado obtido pelo bootstrap",
+  "weather": "consulta de rede verificada separadamente",
+  "cfn_lint": "template estático válido; exit 0",
+  "aws_deployment": false,
+  "email_delivery": false
+}
