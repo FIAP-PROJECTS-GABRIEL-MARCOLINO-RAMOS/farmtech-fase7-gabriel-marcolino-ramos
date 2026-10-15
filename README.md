@@ -1,7 +1,9 @@
 # FarmTech Solutions · Fase 7
 
-**A consolidação de um sistema**  
-Gabriel Marcolino Ramos · **RM565717** · rm565717@fiap.com.br  
+**A consolidação de um sistema**
+
+Gabriel Marcolino Ramos · **RM565717** · rm565717@fiap.com.br
+
 Integrante único · Grupo 17 · FIAP Inteligência Artificial
 
 Painel Python que reúne cadastro agrícola, banco relacional, telemetria, análise de rendimento, visão computacional e uma fila de alertas integrada ao Amazon SNS. Os serviços estão na mesma pasta e podem ser acessados pelo Streamlit ou pelo terminal.
